@@ -1,0 +1,8 @@
+.title {
+    max-width: 620px;
+}
+.content-section{ padding-bottom: 4rem;}
+
+@media (max-width: 576px){
+    .basic-form { margin-top: 2rem;  }
+}

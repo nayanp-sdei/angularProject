@@ -1,0 +1,44 @@
+<div class="login-page">
+    <div class="login-box">
+    <h1>WELCOME TO</h1>
+    <div class="logo">
+        <img src="/assets/images/logo.png" style="height: 75px;" />
+    </div>
+    <div class="startearning-form">
+        <form [formGroup]="loginForm">
+            <div class="form-group">
+                <mat-form-field class="input-control" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email">
+                </mat-form-field>
+                <mat-error
+                    *ngIf="loginForm.controls['email'].errors && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)">
+                    <span *ngIf="loginForm.controls['email'].errors?.required"> * Email is required.</span>
+                    <span
+                        *ngIf="loginForm.controls['email'].hasError('pattern') && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)">Please
+                        enter valid email address</span>
+                </mat-error>
+            </div>
+
+            <div class="form-group">
+                <mat-form-field class="input-control" appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput  type="password"formControlName="password">
+                </mat-form-field>
+                <mat-error
+                    *ngIf="loginForm.controls['password'].errors && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)">
+                    <span *ngIf="loginForm.controls['password'].errors?.required"> * Password is required.</span>
+                </mat-error>
+            </div>
+            <div class="form-button">
+                <button *ngIf="!submitted" class="btn btn-primary btn-block" type="submit"  (click)="onSubmit()">Login</button>
+                <button *ngIf="submitted" class="btn btn-primary btn-block" type="button">
+                    <img src="/assets/images/loader_red.gif" style="height: 18px;">
+                </button>
+            </div>
+        </form>
+    </div>
+    <a href="#" class="forgot-link">Forgot your password ?</a>
+    <div class="link">Dont have an account? <a [routerLink]="['/signup']">Sign Up</a></div>
+</div>
+</div>

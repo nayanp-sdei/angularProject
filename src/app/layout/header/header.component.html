@@ -1,0 +1,15 @@
+<!-- header -->
+<header class="">
+    <div class="container d-flex flex-wrap align-items-center">
+        <!-- Logo -->
+        <div class="logo">
+            <a [routerLink]="['/']"><img src="/assets/images/logo.png" class="img-fluid" style="height: 75px;" /></a>
+        </div>
+        <!-- Logo -->
+        <!-- Login Button -->
+        <!-- <a [routerLink]="['/login']" class="btn btn-border ml-auto btn-login">login</a> -->
+        <a *ngIf="!login" [routerLink]="['/login']" class="btn btn-border ml-auto btn-login">login</a> 
+        <a *ngIf="login" routerLink="/" (click)="logout()" class="btn btn-border ml-auto btn-login">Logout</a>
+        <!-- //Login Button -->
+    </div>    
+</header>

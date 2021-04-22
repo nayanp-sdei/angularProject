@@ -1,0 +1,202 @@
+    
+/* Search CSS
+========================================================================== */
+.search-section {     color: #1C2654;
+    text-align: center;
+    margin: 1.5rem auto;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 2rem; position: relative; z-index: 1;}
+
+
+.search-section h2 { color: #218DF7; font-size: 36px; letter-spacing: 0.03em; margin-bottom: 1rem; }
+ 
+.search-section .search-form {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    max-width: 529px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.search-section .search-form .form-control {margin-right: 10px;}
+
+.home-banner{position: relative;}
+.home-banner:after{ content: "";
+    background: url(/../assets/images/header-circle-right.svg) no-repeat;
+    display: block;
+    width: 350px;
+    height: 403px;
+    position: absolute;
+    bottom: 150px;
+    right: 0;}
+.home-banner:before{ content: ""; background: url("/../assets/images/header-circle-left.svg") no-repeat;  
+    display: block;
+    width: 417px;
+    height: 516px;
+    position: absolute;
+    top: -110px;
+    left: 0;} 
+
+/* Earning CSS
+========================================================================== */
+.earning-section { background: #FFFFFF; border-radius: 10px; box-shadow: 0px 4px 20px rgb(0 0 0 / 10%); overflow: hidden; display: flex; display: -webkit-flex; align-items: center; position: relative;  z-index: 1;}
+.earning-section .image {
+flex-basis: 55%;
+min-width: 55%;
+}
+
+.earning-section  .detail {
+max-width: 470px;
+margin: auto;
+line-height: 26px;
+padding: 0 1rem;
+}
+
+.earning-section .detail h3 {
+font-size: 36px;
+color:  #218DF7;
+font-weight: 500;
+margin-bottom: 1rem;
+}
+
+/* Service CSS
+========================================================================== */
+.service-section {
+    background: #fff;
+    padding: 200px 0 30px;
+    margin-top: -150px;
+}
+.service-section .service-items { background: #FFFFFF; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); border-radius: 4px; padding: 30px 20px; margin-bottom: 20px; font-size: 15px; letter-spacing: 0.02em; color: #000000; }
+.service-section .service-items .icon { background: #E4F0FD; border-radius: 4px; width: 70px; height: 70px; display: flex; display: -webkit-flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+.service-section .service-items .icon.greenshade{background: #D3F6F4;}
+.service-section .service-items .icon.redshade{background: #FAE3E5;}
+.service-section .service-items h4 { font-weight: 500; font-size: 20px; letter-spacing: 0.01em; color: #000000; margin-bottom: 10px; }
+.service-section .service-items p:last-child { margin-bottom: 0px; }
+
+
+
+ /* Popular Trial CSS
+========================================================================== */
+.populartrial-section{ background: #FDF4E0; padding: 2rem 0 1.3rem; position: relative;}
+.populartrial-section:after{ content: "";
+    background: url(/../assets/images/trial-box-right.svg) no-repeat;
+    display: block;
+    width: 218px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;}
+.populartrial-section:before{ content: ""; background: url("/../assets/images/trial-box-left.svg") no-repeat;  display: block;
+    width: 367px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;} 
+
+.populartrial-section .populartrial-items {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;    margin-bottom: 20px;    position: relative;
+    z-index: 1;
+}
+
+.populartrial-section .populartrial-items .image {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.populartrial-section .populartrial-items .image img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 250px;
+}
+
+.populartrial-section .populartrial-items .detail { 
+    padding: 1rem 10px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #1C2654;}
+    .populartrial-section .populartrial-items .detail .price {
+        font-size: 15px;
+    }
+
+
+
+ /* Start Learning CSS
+========================================================================== */
+.startearning-section { background: #D3F6F4; padding: 3rem 0; position: relative; }
+.startearning-section:after{ content: "";
+    background: url(/../assets/images/wap-right.svg)  no-repeat;
+    display: block;
+    width: 332px;
+    height: 331px;
+    position: absolute;
+    top: 0;
+    right: 0;}
+.startearning-section:before{ content: ""; background: url("/../assets/images/wap-left.svg")  no-repeat;  display: block;
+    width: 333px;
+    height: 331px;
+    position: absolute;
+    bottom: 0;
+    left: 0;} 
+
+
+    .startearning-form { max-width: 350px; margin: auto; }
+.startearning-form .input-control { width: 100%; }
+.startearning-form  ::ng-deep  .input-control.mat-form-field.mat-form-field-appearance-outline > div.mat-form-field-wrapper > div.mat-form-field-flex > div.mat-form-field-infix { padding: 1em 0px; }
+.startearning-form ::ng-deep .input-control.mat-form-field.mat-form-field-appearance-outline > div.mat-form-field-wrapper > div.mat-form-field-flex > div.mat-form-field-infix > span.mat-form-field-label-wrapper { top: -0.8em; }
+ 
+
+@media (max-width: 576px){
+    .search-section { font-size: 18px; padding-bottom: 0; }
+    .search-section h2 { font-size: 22px; margin-bottom: 5px; }
+
+    .home-banner:before {background: url("/../assets/images/head-mobile-left.svg")  no-repeat; background-size: cover; width: 194px; height: 196px; top: -95px; }
+    .home-banner:after { background: url("/../assets/images/head-mobile-right.svg")  no-repeat; bottom: 503px; width: 181px; background-size: cover; height: 195px; }
+    
+    .search-section .search-form { padding: 6px 0; }
+    .search-section .search-form .form-control { height: calc(1.5em + .75rem + 17px); }
+    .search-section .search-form .btn-lg { padding: 0.845rem 1.5rem; }
+
+.px-xs-0 { padding-left: 0; padding-right: 0; }
+
+.earning-section { border-radius: 0px; box-shadow: none; flex-wrap: wrap; }
+.earning-section .image { flex-basis: 100%; min-width: 100%; margin-bottom: 20px; }
+.earning-section .detail { text-align: center; }
+
+.service-section { padding: 25px 0 30px; margin-top: 0px; }
+
+.title { font-size: 15px; margin-bottom: 20px; max-width: 100%; line-height: 24px; }
+.title h2 { font-size: 22px; }
+
+
+.populartrial-section:after { background: url("/../assets/images/popular-right.svg") no-repeat; width: 50px;}
+.populartrial-section::before { background: url("/../assets/images/popular-left.svg") no-repeat; width: 50px;}
+.populartrial-section .row .col-sm-4 {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.populartrial-section {
+padding-bottom: 10px;
+}
+
+.startearning-section:before, .startearning-section:after {
+display: none;
+}
+
+.startearning-section {
+padding: 25px 0 35px;
+}
+
+.startearning-form .form-group {
+margin-bottom: 10px;
+}
+
+.startearning-form .form-button {
+margin-top: 20px;
+}
+}

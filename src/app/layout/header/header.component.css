@@ -1,0 +1,12 @@
+ /*-------------------------------------------------------*/
+/*  Header Navigation Css
+/*-------------------------------------------------------*/
+header { padding: 20px 0;     min-width: 100px;position: relative; z-index: 1;
+    }
+.btn-login{ min-width: 100px;padding: 0.219rem 1.5rem;}
+
+@media (max-width: 480px){
+    header .logo {
+        max-width: 152px;
+    }
+}
